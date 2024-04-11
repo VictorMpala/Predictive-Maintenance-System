@@ -126,7 +126,7 @@ export default function SignInSide() {
                 required
                 fullWidth
                 name="password"
-                label="confirm Password"
+                label="confirm-password"
                 type="password"
                 id="password"
                 autoComplete="current-password"
