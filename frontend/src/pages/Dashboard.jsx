@@ -15,12 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-
-// import Chart from './Chart';
-// import Deposits from './Deposits';
-// import Orders from './Orders';
-
-
+import IframeWidget from './IframeWidget';  // Import the IframeWidget component
 
 const drawerWidth = 240;
 
@@ -149,6 +144,18 @@ export default function Dashboard() {
         >
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: 2,
+              }}
+            >
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/lev4EUHXeqJyARw0vMHjO_x5bLhdZmAmDL98Vnptk0E?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/7CIC60g00OSnIJE2HI812h-lqx7UCQepvQSTUsTTpU8?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/sHlceD0ONxlj67u4RfHgYdVL5DSDZ8AdOorBv-sCrNk?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/NOfdxZOIjEiPbKtsEFTSWTaBZyU08xpz2Gswp4KkZMI?embed=true" />
+            </Box>
           </Container>
         </Box>
       </Box>
