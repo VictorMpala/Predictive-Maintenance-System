@@ -3,7 +3,7 @@ import SignInSide from "./pages/signin";
 import SignUp from "./pages/signup";
 import NotFound from "./pages/notfound";
 import Dashboard from "./pages/Dashboard";
-import Dashboardg from "./pages/Dashboardg";
+
 
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="*" element={<NotFound/>}/>
       <Route path="/dashboard/*" element={<Dashboard/>}/>
-      <Route path="/dashboard/graphs*" element={<Dashboardg/>}/>
     </Routes>
     </BrowserRouter>
     </>
