@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -10,31 +11,31 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/dashboard">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/graphs">
       <ListItemIcon>
-      <BarChartIcon />
+        <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Graphs" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/analytics">
       <ListItemIcon>
-      <BarChartIcon />
+        <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Analytics" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/alarms">
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Alarms" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/predictions">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
@@ -46,21 +47,21 @@ export const mainListItems = (
 export const secondaryListItems = (
   <React.Fragment>
     <ListSubheader component="div" inset>
-      Maintainence
+      Maintenance
     </ListSubheader>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/maintenance">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText  primary="Current month" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/maintenance/next-quarter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="Next quarter" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/maintenance/year-end">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>

@@ -16,7 +16,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import IframeWidget from './IframeWidget';  // Import the IframeWidget component
-import BasicModal from './Modal';
+import IframeContainer from './ifcont';
 
 const drawerWidth = 240;
 
@@ -102,7 +102,7 @@ export default function Dashboard() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Predictive Maintenance System
+              Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -152,11 +152,11 @@ export default function Dashboard() {
                 gap: 2,
               }}
             >
-              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/lev4EUHXeqJyARw0vMHjO_x5bLhdZmAmDL98Vnptk0E?embed=true" />
-              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/7CIC60g00OSnIJE2HI812h-lqx7UCQepvQSTUsTTpU8?embed=true" />
-              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/sHlceD0ONxlj67u4RfHgYdVL5DSDZ8AdOorBv-sCrNk?embed=true" />
-              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/NOfdxZOIjEiPbKtsEFTSWTaBZyU08xpz2Gswp4KkZMI?embed=true" />
-              <BasicModal/>
+              {/* <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/Uos6QD2IOvZIsyFQOW7R0zWyhvir4lEI6uIW1QkHcyc?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/w9WH32B-uRyKzmsIZTNTSIAk1Cjtjp_yY3ItJ7qLSnQ?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/DZw64d4qznnF7B-Rg6ZXJn0fGayLgFhckgDdFrVfsg4?embed=true" />
+              <IframeWidget src="https://industrial.ubidots.com/app/dashboards/public/widget/iINVpFl0DTvb98qHXrTrL1S2pfeXXsQuM5WQaC3dUKo?embed=true" /> */}
+              <IframeContainer />
             </Box>
           </Container>
         </Box>
