@@ -1,4 +1,3 @@
-import React from 'react';
 
 const IframeContainer = () => {
   const iframeStyle = {
@@ -17,7 +16,8 @@ const IframeContainer = () => {
 
   return (
     <div style={containerStyle}>
-      <iframe
+      <iframe 
+      width= "80%"
         title="iframe1"
         src="https://industrial.ubidots.com/app/dashboards/public/widget/Uos6QD2IOvZIsyFQOW7R0zWyhvir4lEI6uIW1QkHcyc?embed=true"
         style={iframeStyle}
